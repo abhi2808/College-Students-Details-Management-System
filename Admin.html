@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin Login</title>
+
+    <style>
+      /* The alert message box */
+      .alert {
+        padding: 20px;
+        background-color: #f44336; /* Red */
+        color: white;
+        margin-bottom: 15px;
+        width: 100%;
+      }
+
+      /* The close button */
+      .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      /* When moving the mouse over the close button */
+      .closebtn:hover {
+        color: black;
+      }
+    </style>
+</head>
+<body>
+  <div>
+  <div class="alert" >
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    Authentication failed!
+  </div>
+    <div class="container">
+        <div class="brand-logo">
+           <img src="login-avatar-icon.gif" alt="" class="avatar-icon"> <!-- <img src="asset/logo2.jpg" alt=" kiit logo" class="kiit-logo"> -->
+        </div>
+        <div class="brand-title">ADMIN</div>
+        <div class="inputs">
+        <form action="AdminCheck.php" method="get">
+            <label for="uname">USERNAME</label>
+            <input type="username" placeholder="Enter Username" name="uname" id="uname" required />
+            <label for="password">PASSWORD</label>
+            <input type="password" placeholder="Enter Password" name="upass" id="upass" required/>
+            <button type="submit">LOGIN</button>
+        </form>
+        </div>
+      </div>
+        
+    </div>
+</body>
+</html>

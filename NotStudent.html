@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="NotStudent.css">
+    <title>Student Login</title>
+    <style>
+        /* The alert message box */
+        .alert {
+          padding: 20px;
+          background-color: #f44336; /* Red */
+          color: white;
+          margin-bottom: 15px;
+          width: 100%;
+        }
+  
+        /* The close button */
+        .closebtn {
+          margin-left: 15px;
+          color: white;
+          font-weight: bold;
+          float: right;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+  
+        /* When moving the mouse over the close button */
+        .closebtn:hover {
+          color: black;
+        }
+      </style>
+</head>
+<body>
+    <div>
+        
+    <div class="container">
+      <div class="alert" >
+        <span class="closebtn" onclick="this.parentElement.style.display='none';" >&times;</span>
+        Authentication failed!
+      </div>
+        <div class="brand-logo">
+           <img src="login-avatar-icon.gif" alt="" class="avatar-icon"> <!-- <img src="asset/logo2.jpg" alt=" kiit logo" class="kiit-logo"> -->
+        </div>
+        <div class="brand-title">STUDENT</div>
+        <div class="inputs">
+        <form action="StudCheck.php" method="get">
+            <label for="uRoll">Roll</label>
+            <input type="text" placeholder="roll number" name="uRoll" id="uRoll" required />
+            <label for="uDob">Date of Birth</label>
+            <input type="date" name="uDob" id="uDob" required/>
+            <button type="submit">LOGIN</button>
+        </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
